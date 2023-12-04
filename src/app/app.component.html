@@ -1,0 +1,18 @@
+<h3>ngIF directive using ng-content</h3>
+<div *ngIf=" youtuberName === 'Thapa Technicals'; then mainpart else elsepart">
+<!-- <h5>Thank you for 10k subscriber</h5>
+
+<h5>By Thapa Technical</h5> -->
+</div>
+<ng-template #mainpart>
+  <h5>Thank you for 10k subscriber</h5>
+
+  <h5>By Thapa Technical</h5>
+</ng-template>
+<ng-template #elsepart>
+<h5>Please subscribe to my channel</h5>
+
+<h5>By Thapa Technical</h5>
+</ng-template>
+
+<app-switch-directive></app-switch-directive>

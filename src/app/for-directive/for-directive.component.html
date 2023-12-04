@@ -1,0 +1,7 @@
+<h3>for-directive</h3>
+<div *ngFor=" let color of colors ">
+    {{color}}
+</div>
+<div *ngFor=" let bio of biodata; index as i; first as f; last as l; even as e;odd as o ">
+    <h4> {{e}} {{bio.id}} {{bio.name}} {{i}} {{f}} {{l}} {{o}}</h4>
+</div>

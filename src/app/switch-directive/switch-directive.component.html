@@ -1,0 +1,21 @@
+<h3>switch-directive in angular</h3>
+<!-- [ngswitch] is attribute directive -->
+<!-- *ngSwitchCase and *ngSwitchDefault, *ngIf,*ngFor are structural directive -->
+<!-- no need to write break statement here -->
+<div [ngSwitch]="favColor">
+    <div *ngSwitchCase = " 'red' ">
+        this is my favourite color {{favColor}}
+    </div>
+    <div *ngSwitchCase = " 'blue' ">
+        this is my favourite color {{favColor}}
+    </div>
+    <div *ngSwitchCase = " 'pink' ">
+        this is my favourite color {{favColor}}
+    </div>
+    <div *ngSwitchDefault>
+        This is default one...
+    </div>
+
+
+</div>
+<app-for-directive></app-for-directive>
